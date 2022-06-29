@@ -1,6 +1,5 @@
 package com.example.toyota
 
-import MenuActivity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
