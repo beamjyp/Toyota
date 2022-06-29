@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray">
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/toyota16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextAppearance.MaterialComponents.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="ยินดีต้อนรับ"
+                android:textSize="16dp" />
+
+            <TextView
+                style="@style/TextAppearance.MaterialComponents.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="คุณอะไรก็ ไม่รู้เหมือนกัน"
+                android:layout_marginLeft="10dp"
+                android:textSize="22dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/TextAppearance.MaterialComponents.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="รหัสผู้จัดการ XP-221566"
+                android:layout_marginLeft="10dp"
+                android:textSize="16dp" />
+
+            <TextView
+                style="@style/TextAppearance.MaterialComponents.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ตำแหน่ง ผู้จัดการฝ่ายการผลิต"
+                android:layout_marginLeft="10dp"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/half_circle"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:layout_marginTop="120dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <GridView
+                android:id="@+id/gridView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="2" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/settingBtn"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bbb"
+            android:text="@string/B"
+            android:textColor="@android:color/black"
+            app:backgroundTint="@color/gray"
+            app:icon="@drawable/ic_baseline_settings_24"
+            app:iconTint="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/profileBtn"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="596dp" />
+
+        <Button
+            android:id="@+id/profileBtn"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btns"
+            android:text="@string/A"
+            android:textColor="@android:color/black"
+            app:backgroundTint="@color/gray"
+            app:icon="@drawable/ic_baseline_person_24"
+            app:iconTint="@color/black"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="596dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
