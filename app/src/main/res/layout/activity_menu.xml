@@ -17,10 +17,10 @@
         <ImageView
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:src="@drawable/toyota16" />
+            android:src="@drawable/toyota16"
+            />
 
         <LinearLayout
-            android:background="@drawable/bgtp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
@@ -30,17 +30,17 @@
                 style="@style/TextAppearance.MaterialComponents.Body1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
                 android:text="ยินดีต้อนรับ"
-                android:textSize="16dp" />
+                android:textSize="16sp" />
 
             <TextView
                 style="@style/TextAppearance.MaterialComponents.Body1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="คุณอะไรก็ ไม่รู้เหมือนกัน"
-                android:layout_marginLeft="10dp"
-                android:textSize="22dp"
+                android:layout_marginStart="10dp"
+                android:textSize="22sp"
                 android:textStyle="bold"/>
 
             <TextView
@@ -48,16 +48,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="รหัสผู้จัดการ XP-221566"
-                android:layout_marginLeft="10dp"
-                android:textSize="16dp" />
+                android:layout_marginStart="10dp"
+                android:textSize="16sp" />
 
             <TextView
                 style="@style/TextAppearance.MaterialComponents.Body1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ตำแหน่ง ผู้จัดการฝ่ายการผลิต"
-                android:layout_marginLeft="10dp"
-                android:textSize="18dp" />
+                android:layout_marginStart="10dp"
+                android:textSize="18sp" />
         </LinearLayout>
     </LinearLayout>
 
@@ -74,24 +74,19 @@
             android:layout_marginTop="30dp"
             android:layout_marginBottom="100dp">
 
-            <GridLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:columnCount="2"
-                android:rowCount="5">
-
                 <GridLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_above="@+id/linearLayout"
                     android:columnCount="2"
-                    android:rowCount="3">
-
+                    android:rowCount="3"
+                    tools:ignore="UselessParent">
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_row="0"
+                        android:id="@+id/cardToRadio"
+                        android:clickable="true"
                         android:layout_rowWeight="1"
                         android:layout_column="0"
                         android:layout_columnWeight="1"
@@ -105,17 +100,18 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical|center_horizontal"
                             android:gravity="center"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            tools:ignore="UseCompoundDrawables">
 
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:src="@drawable/home"/>
+                                android:src="@drawable/ic_walkie"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="HOME"
+                                android:text="วิทยุสื่อสาร"
                                 android:textAlignment="center"
                                 android:textStyle="bold" />
                         </LinearLayout>
@@ -143,12 +139,12 @@
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:src="@drawable/language" />
+                                android:src="@drawable/ic_call" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="LANGUAGE"
+                                android:text="โทรศัพท์"
                                 android:textAlignment="center"
                                 android:textStyle="bold" />
                         </LinearLayout>
@@ -171,17 +167,18 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical|center_horizontal"
                             android:gravity="center"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            tools:ignore="UseCompoundDrawables">
 
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:src="@drawable/chat" />
+                                android:src="@drawable/ic_cctv" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="CHAT"
+                                android:text="กล้องวงจรปิด"
                                 android:textAlignment="center"
                                 android:textStyle="bold" />
                         </LinearLayout>
@@ -209,12 +206,12 @@
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:src="@drawable/calendar" />
+                                android:src="@drawable/ic_stoke" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="CALENDAR"
+                                android:text="สต็อกของ"
                                 android:textAlignment="center"
                                 android:textStyle="bold" />
                         </LinearLayout>
@@ -243,12 +240,12 @@
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:src="@drawable/widgets" />
+                                android:src="@drawable/ic_path" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="WIDGETS"
+                                android:text="จุดตรวจ"
                                 android:textAlignment="center"
                                 android:textStyle="bold" />
                         </LinearLayout>
@@ -276,19 +273,17 @@
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:src="@drawable/info" />
+                                android:src="@drawable/ic_light" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="INFO"
+                                android:text="การใช้ไฟฟ้า"
                                 android:textAlignment="center"
                                 android:textStyle="bold" />
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
                 </GridLayout>
-
-            </GridLayout>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
