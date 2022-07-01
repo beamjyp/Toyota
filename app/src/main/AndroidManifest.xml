@@ -4,6 +4,7 @@
     package="com.example.toyota">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
         android:allowBackup="true"
@@ -15,12 +16,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Toyota"
         tools:targetApi="31">
+
         <meta-data
             android:name="com.google.android.actions"
             android:resource="@xml/actions" />
 
         <activity
-            android:name=".MainActivity"
+            android:name=".MicToSpeakerActivity"
             android:exported="false" />
         <activity
             android:name=".MenuActivity"
@@ -30,6 +32,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
