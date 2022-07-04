@@ -13,8 +13,11 @@ import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
+import android.view.MotionEvent
 import android.view.View
 import android.widget.Button
+import android.widget.ImageButton
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AlertDialog
@@ -25,7 +28,7 @@ import androidx.core.content.ContextCompat
 
 class MicToSpeakerActivity : AppCompatActivity() {
     //Audio
-    private var mOn: Button? = null
+    private var mOn: ImageButton? = null
     private var isOn = false
     private var isRecording = false
     private var record: AudioRecord? = null
@@ -43,10 +46,18 @@ class MicToSpeakerActivity : AppCompatActivity() {
     private var IS_HEADPHONE_AVAILBLE = true
     private val MY_PERMISSIONS_RECORD_AUDIO = 1
 
-    @RequiresApi(api = Build.VERSION_CODES.M)
+    @RequiresApi(api =  Build.VERSION_CODES.LOLLIPOP)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(com.example.toyota.R.layout.activity_mictospeaker)
+
+        val ButtonP = findViewById<ImageButton>(com.example.toyota.R.id.ptoMenu)
+        // set on-click listener
+
+        ButtonP.setOnClickListener {
+            val intent = Intent(this, MenuActivity::class.java)
+            startActivity(intent)
+        }
 
         //Reduce latancy
         mOn = findViewById(com.example.toyota.R.id.button)
@@ -87,7 +98,7 @@ class MicToSpeakerActivity : AppCompatActivity() {
 //        }
         initAudio()
     }
-
+    @SuppressLint("ClickableViewAccessibility")
     private fun initAudio() {
         //Tests all sample rates before selecting one that works
         val sample_rate = sampleRate
@@ -126,17 +137,21 @@ class MicToSpeakerActivity : AppCompatActivity() {
             )
             == PackageManager.PERMISSION_GRANTED
         ){
-            mOn!!.setOnClickListener {
+            mOn!!.setOnTouchListener { _, motionEvent ->
                 isOn = !isOn
-                if (isOn) {
-                    object : Thread() {
-                        override fun run() {
-                            startAudio()
-                        }
-                    }.start()
-                } else {
-                    endAudio()
+                when (motionEvent.action) {
+                    MotionEvent.ACTION_DOWN -> {
+                        object : Thread() {
+                            override fun run() {
+                                startAudio()
+                            }
+                        }.start()
+                    }
+                    MotionEvent.ACTION_UP -> {
+                        endAudio()
+                    }
                 }
+                false
             }
         }
         record = AudioRecord(source, sample_rate, channel_in, format, minBuffer)
@@ -220,4 +235,3 @@ class MicToSpeakerActivity : AppCompatActivity() {
         private const val REQUEST_ENABLE_BT = 1
     }
 }
-
