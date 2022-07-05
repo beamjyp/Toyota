@@ -15,6 +15,7 @@
         <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/drawable/home.xml" value="0.1" />
         <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/drawable/ic_account.xml" value="0.1335" />
         <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/drawable/ic_android_white_24dp.xml" value="0.1" />
+        <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/drawable/ic_baseline_navigate_before_24.xml" value="0.1705" />
         <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.1385" />
         <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.2" />
         <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/drawable/ic_call.xml" value="0.1055" />
@@ -42,8 +43,8 @@
         <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/layout/activity_custom_adapter.xml" value="0.1921875" />
         <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/layout/activity_menu.xml" value="0.2" />
-        <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/layout/activity_mictospeaker.xml" value="0.1" />
+        <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/layout/activity_menu.xml" value="0.1" />
+        <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/layout/activity_mictospeaker.xml" value="0.25" />
         <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/layout/grid_item.xml" value="0.1640625" />
         <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/layout/settings_activity.xml" value="0.14114583333333333" />
         <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/mipmap-anydpi-v26/background.xml" value="0.1" />
