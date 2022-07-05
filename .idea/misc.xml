@@ -3,13 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/drawable/background_foreground.xml" value="0.1" />
         <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/drawable/bbb.xml" value="0.1" />
         <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/drawable/bgtp.xml" value="0.17" />
+        <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/drawable/borderbutton.xml" value="0.1335" />
+        <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/drawable/borderedit.xml" value="0.1" />
         <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/drawable/btns.xml" value="0.12" />
         <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/drawable/calendar.xml" value="0.1" />
         <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/drawable/chat.xml" value="0.1" />
         <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/drawable/half_circle.xml" value="0.152" />
         <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/drawable/home.xml" value="0.1" />
+        <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/drawable/ic_account.xml" value="0.1335" />
         <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/drawable/ic_android_white_24dp.xml" value="0.1" />
         <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.1385" />
         <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.2" />
@@ -32,14 +36,18 @@
         <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/drawable/language.xml" value="0.1" />
         <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/drawable/path.xml" value="0.1055" />
         <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/drawable/select.xml" value="0.1" />
+        <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/drawable/triangle.xml" value="0.1" />
+        <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/drawable/triangle2.xml" value="0.1" />
         <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/drawable/widgets.xml" value="0.1" />
         <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/layout/activity_custom_adapter.xml" value="0.1921875" />
-        <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/layout/activity_menu.xml" value="0.13043478260869565" />
+        <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/layout/activity_menu.xml" value="0.2" />
         <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/layout/activity_mictospeaker.xml" value="0.1" />
         <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/layout/grid_item.xml" value="0.1640625" />
         <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/layout/settings_activity.xml" value="0.14114583333333333" />
+        <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/mipmap-anydpi-v26/background.xml" value="0.1" />
+        <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/mipmap-anydpi-v26/background_round.xml" value="0.1" />
         <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
         <entry key="..\:/WorkNew/Kotlin/Toyota/app/src/main/res/xml/root_preferences.xml" value="0.1" />
       </map>
@@ -50,5 +58,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.2" />
+      </ProjectState>
+    </option>
   </component>
 </project>
